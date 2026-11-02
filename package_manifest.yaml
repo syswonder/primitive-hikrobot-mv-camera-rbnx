@@ -1,0 +1,30 @@
+manifestVersion: 1
+
+build: bash scripts/build.sh
+
+start: bash scripts/start.sh
+
+package:
+  name: robonix.primitive.hikrobot.mv.camera
+  version: 0.1.0
+  description: >-
+    Hikrobot MV-series industrial camera behind the standard camera
+    contracts: an image stream, an on-demand snapshot and, when the
+    deployment supplies a calibration, intrinsics. Frames come from the MVS
+    SDK or from an AUBO controller's visual_position service.
+  tags:
+    - primitive
+    - robonix
+    - hikrobot
+    - camera
+    - aubo
+  maintainers:
+    - HeartLinked <lfyhl0907@gmail.com>
+  license: MulanPSL-2.0
+
+capabilities:
+  - name: robonix/primitive/camera/rgb
+  - name: robonix/primitive/camera/snapshot
+  - name: robonix/primitive/camera/intrinsics
+
+depends: []
