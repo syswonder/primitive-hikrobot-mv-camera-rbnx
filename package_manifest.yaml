@@ -24,7 +24,10 @@ package:
 
 capabilities:
   - name: robonix/primitive/camera/rgb
+    transport: ros2
   - name: robonix/primitive/camera/snapshot
+    transport: mcp
   - name: robonix/primitive/camera/intrinsics
+    transport: ros2
 
 depends: []
